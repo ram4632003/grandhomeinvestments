@@ -153,6 +153,20 @@ body {
   margin: 0 8px;
 }
 
+#site-build::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-image: url('build-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  filter: blur(4px);
+  opacity: 0.5;
+  z-index: -1;
+}
+
+
 
 
 
