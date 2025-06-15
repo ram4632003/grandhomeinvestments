@@ -1,87 +1,83 @@
-* { margin: 0; padding: 0; box-sizing: border-box; }
 body {
-  font-family: Arial, sans-serif;
-  background: #f4f4f4;
-  color: #333;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  font-family: 'Poppins', sans-serif;
+  background: #f4f6f9;
+  margin: 0;
+  color: #222;
 }
 
-.top-toggle {
+header {
+  background: #333;
+  padding: 10px;
+  text-align: right;
+}
+
+.mode-toggle button {
+  background: #fff;
+  color: #333;
+  border: none;
+  margin: 0 5px;
+  padding: 8px 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.site {
+  display: none;
+}
+.site.active {
+  display: block;
+  animation: fadeIn 0.7s ease;
+}
+
+.navbar {
+  background: #444;
+  padding: 12px;
   display: flex;
   justify-content: center;
-  position: relative;
-  background: #005f73;
+  gap: 20px;
 }
-
-.tab-btn {
-  flex: 1;
-  padding: 14px 20px;
-  background: transparent;
-  border: none;
+.navbar .nav-link {
   color: white;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: color 0.3s;
-  z-index: 2;
+  text-decoration: none;
+  font-weight: 600;
+}
+.navbar .nav-link:hover {
+  text-decoration: underline;
 }
 
-.tab-btn.active {
-  color: #005f73;
-}
-
-.toggle-indicator {
-  position: absolute;
-  bottom: 0;
-  width: 50%;
-  height: 100%;
-  background: #94d2bd;
-  transition: transform 0.3s ease;
-  z-index: 1;
-}
-
-.tab-btn:first-child.active ~ .toggle-indicator {
-  transform: translateX(0%);
-}
-.tab-btn:last-child.active ~ .toggle-indicator {
-  transform: translateX(100%);
-}
-
-.hero {
-  text-align: center;
-  background: #0a9396;
-  color: white;
-  padding: 60px 20px;
-}
-
-main {
-  flex: 1;
-  position: relative;
-  overflow: hidden;
-}
-
-.screen {
-  position: absolute;
-  inset: 0;
+.page {
+  display: none;
   padding: 40px;
-  background: white;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.4s ease;
-}
-
-.screen.active {
-  opacity: 1;
-  visibility: visible;
-}
-
-footer {
   text-align: center;
-  padding: 20px;
-  background: #005f73;
-  color: white;
 }
+.page.active {
+  display: block;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+input, button {
+  padding: 10px;
+  width: 200px;
+}
+button {
+  background: #0055a5;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+
 
 
 
