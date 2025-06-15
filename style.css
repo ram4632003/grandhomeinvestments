@@ -1,5 +1,4 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
-
 body {
   font-family: Arial, sans-serif;
   background: #f4f4f4;
@@ -9,44 +8,53 @@ body {
   flex-direction: column;
 }
 
-/* TOP TRANSPARENT TOGGLE */
 .top-toggle {
   display: flex;
   justify-content: center;
-  padding: 10px;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  z-index: 10;
-  background: transparent;
+  position: relative;
+  background: #005f73;
 }
 
 .tab-btn {
-  background: none;
+  flex: 1;
+  padding: 14px 20px;
+  background: transparent;
   border: none;
+  color: white;
   font-size: 1rem;
-  color: black;
-  margin: 0 20px;
-  padding: 10px 0;
   cursor: pointer;
-  position: relative;
+  transition: color 0.3s;
+  z-index: 2;
 }
 
 .tab-btn.active {
-  font-weight: bold;
-  text-decoration: underline;
+  color: #005f73;
 }
 
-/* HERO SECTION */
+.toggle-indicator {
+  position: absolute;
+  bottom: 0;
+  width: 50%;
+  height: 100%;
+  background: #94d2bd;
+  transition: transform 0.3s ease;
+  z-index: 1;
+}
+
+.tab-btn:first-child.active ~ .toggle-indicator {
+  transform: translateX(0%);
+}
+.tab-btn:last-child.active ~ .toggle-indicator {
+  transform: translateX(100%);
+}
+
 .hero {
   text-align: center;
   background: #0a9396;
   color: white;
-  padding: 80px 20px 60px;
-  margin-top: 40px;
+  padding: 60px 20px;
 }
 
-/* MAIN CONTENT */
 main {
   flex: 1;
   position: relative;
@@ -66,16 +74,15 @@ main {
 .screen.active {
   opacity: 1;
   visibility: visible;
-  z-index: 1;
 }
 
-/* FOOTER */
 footer {
   text-align: center;
   padding: 20px;
   background: #005f73;
   color: white;
 }
+
 
 
 
