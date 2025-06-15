@@ -120,6 +120,39 @@ input:checked + .slider {
 input:checked + .slider:before {
   transform: translateX(26px);
 }
+body {
+  background: #fefefe;
+  color: #000;
+}
+
+.mode-toggle.text-toggle {
+  text-align: center;
+  background: #fff3e0;
+  padding: 16px 0;
+  font-size: 1.2rem;
+}
+
+.mode-option {
+  cursor: pointer;
+  margin: 0 10px;
+  font-weight: normal;
+  transition: all 0.3s ease;
+}
+
+.mode-option:hover {
+  text-decoration: underline;
+}
+
+.mode-option.active {
+  font-weight: bold;
+  font-size: 1.4rem;
+  text-decoration: underline;
+}
+
+.divider {
+  color: #666;
+  margin: 0 8px;
+}
 
 
 
