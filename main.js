@@ -1,15 +1,16 @@
 document.addEventListener("DOMContentLoaded", () => {
   const siteInvest = document.getElementById("site-invest");
   const siteBuild = document.getElementById("site-build");
+  const toggle = document.getElementById("mode-toggle");
 
-  document.getElementById("switch-to-invest").addEventListener("click", () => {
-    siteInvest.classList.add("active");
-    siteBuild.classList.remove("active");
-  });
-
-  document.getElementById("switch-to-build").addEventListener("click", () => {
-    siteBuild.classList.add("active");
-    siteInvest.classList.remove("active");
+  toggle.addEventListener("change", () => {
+    if (toggle.checked) {
+      siteInvest.classList.remove("active");
+      siteBuild.classList.add("active");
+    } else {
+      siteBuild.classList.remove("active");
+      siteInvest.classList.add("active");
+    }
   });
 
   document.querySelectorAll(".nav-link").forEach(link => {
@@ -23,3 +24,4 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
