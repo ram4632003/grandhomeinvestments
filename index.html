@@ -3,46 +3,53 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Real Estate | Build & Invest</title>
-  <link rel="stylesheet" href="style.css"/>
+  <title>Real Estate Dual Site</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="main.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Toggle Switch Top Bar -->
-  <div class="top-toggle">
-    <button data-tab="build" class="tab-btn active">🏗 Build</button>
-    <button data-tab="invest" class="tab-btn">💼 Invest</button>
-    <div class="toggle-indicator"></div>
-  </div>
 
-  <header class="hero">
-    <h1>Dream Home? We Build It.</h1>
-    <p>Custom homes, seamless process, and investment opportunities.</p>
+  <header>
+    <div class="mode-toggle">
+      <button id="switch-to-invest">Investing</button>
+      <button id="switch-to-build">Build With Us</button>
+    </div>
   </header>
 
-  <main>
-    <!-- BUILD SECTION -->
-    <section id="build" class="screen active">
-      <h2>Build With Us</h2>
-      <p>We manage your project from design to handover.</p>
-    </section>
+  <!-- INVESTING SITE -->
+  <div id="site-invest" class="site active">
+    <nav class="navbar">
+      <a href="#invest-home" class="nav-link" data-target="invest-home">Home</a>
+      <a href="#invest-opps" class="nav-link" data-target="invest-opps">Opportunities</a>
+      <a href="#invest-contact" class="nav-link" data-target="invest-contact">Contact</a>
+    </nav>
+    <main>
+      <section id="invest-home" class="page active">
+        <h1>Welcome Investors</h1>
+        <p>Explore real estate opportunities with strong ROI.</p>
+      </section>
+      <section id="invest-opps" class="page">
+        <h2>Our Investment Portfolio</h2>
+        <p>Handpicked, high-yield assets across cities.</p>
+      </section>
+      <section id="invest-contact" class="page">
+        <h2>Investor Relations</h2>
+        <form>
+          <input type="email" placeholder="Email" />
+          <button>Contact Us</button>
+        </form>
+      </section>
+    </main>
+  </div>
 
-    <!-- INVEST SECTION -->
-    <section id="invest" class="screen">
-      <h2>Invest With Us</h2>
-      <p>Partner in profitable, well-managed developments.</p>
-    </section>
-  </main>
-
-  <footer>
-    <p>© 2025 Real Estate Company</p>
-  </footer>
-
-  <script src="main.js"></script>
-</body>
-</html>
-
-
-  <script src="main.js"></script>
-</body>
-</html>
+  <!-- BUILD WITH US SITE -->
+  <div id="site-build" class="site">
+    <nav class="navbar">
+      <a href="#build-home" class="nav-link" data-target="build-home">Home</a>
+      <a href="#build-projects" class="nav-link" data-target="build-projects">Our Projects</a>
+      <a href="#build-contact" class="nav-link" data-target="build-contact">Get in Touch</a>
+    </nav>
+    <main>
+      <section id="build-home" class="page active">
 
