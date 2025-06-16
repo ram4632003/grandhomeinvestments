@@ -156,7 +156,7 @@ body {
 }
 
 
-  #site-build::before {
+  
 #site-build::before {
   content: "";
   position: absolute;
@@ -169,8 +169,6 @@ body {
   filter: blur(.3px);
   opacity: 0.5;
   z-index: -1;
-}
-
 }
 
  
