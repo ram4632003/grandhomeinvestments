@@ -129,7 +129,7 @@ body {
 
 .mode-toggle.text-toggle {
   text-align: center;
-  background: #fff3e0;
+  background: transparent;
   padding: 16px 0;
   font-size: 1.2rem;
 }
