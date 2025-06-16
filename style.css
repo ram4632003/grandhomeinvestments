@@ -162,7 +162,7 @@ body {
   position: absolute;
   top: 0; left: 0;
   width: 100%; height: 100%;
-  background-image: url('siteimgg.jpg'); /* make sure this filename matches your image */
+  background-image: url('siteimage.jpg'); /* make sure this filename matches your image */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
