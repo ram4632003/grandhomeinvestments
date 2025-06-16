@@ -1,12 +1,12 @@
 body {
   font-family: 'Poppins', sans-serif;
-  background: #f4f6f9;
+  background: transparent;
   margin: 0;
   color: #222;
 }
 
 header {
-  background:transparent;
+  background: transparent;
   padding: 10px;
   text-align: right;
 }
