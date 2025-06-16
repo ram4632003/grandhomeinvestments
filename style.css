@@ -159,10 +159,10 @@ body {
   position: absolute;
   top: 0; left: 0;
   width: 100%; height: 100%;
-  background-image: url('siteimage.png');
+  background-image: url('siteimage1.png');
   background-size: cover;
   background-position: center;
-  filter: blur(4px);
+ 
   opacity: 0.5;
   z-index: -1;
 }
