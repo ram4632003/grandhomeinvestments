@@ -8,7 +8,22 @@ body {
 header {
   background: transparent;
   padding: 10px;
-  text-align: right;
+}
+
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 12px 20px;
+  z-index: 10;
+}
+
+.logo {
+  position: absolute;
+  left: 20px;
+  height: 50px;
+  width: auto;
 }
 
 .mode-toggle.text-toggle {
@@ -16,7 +31,6 @@ header {
   background: transparent;
   padding: 16px 0;
   font-size: 1.2rem;
-  position: relative;
   z-index: 2;
 }
 
@@ -116,7 +130,6 @@ button {
   filter: blur(2px);
 }
 
-/* Gradient overlay for contrast */
 .hero-bg::after {
   content: "";
   position: absolute;
@@ -127,7 +140,6 @@ button {
   z-index: 1;
 }
 
-/* Text styling */
 .hero-content.left-aligned {
   z-index: 2;
   text-align: left;
@@ -159,6 +171,7 @@ button {
 .hero-heading .gray {
   color: #cccccc;
 }
+
 
 
 
