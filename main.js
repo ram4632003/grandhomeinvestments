@@ -39,12 +39,13 @@ buildBtn.addEventListener("click", () => {
       });
     });
   });
+   window.addEventListener("scroll", () => {
+    const heroImage = document.querySelector('.hero-bg');
+    if (heroImage) {
+      const scrollY = window.scrollY;
+      const scaleFactor = 1 + scrollY * 0.0008;
+      heroImage.style.transform = `scale(${scaleFactor})`;
+    }
 });
-window.addEventListener("scroll", () => {
-  const heroImage = document.querySelector('siteimage.png');
-  if (heroImage) {
-    const scrollY = window.scrollY;
-    heroImage.style.transform = `scale(${1 + scrollY * 0.0008})`;
-  }
-});
+
 
