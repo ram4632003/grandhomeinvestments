@@ -1,6 +1,6 @@
 body {
   font-family: 'Poppins', sans-serif;
-  background: transparent;
+  background: #fefefe;
   margin: 0;
   color: #222;
 }
@@ -12,7 +12,6 @@ header {
 }
 
 .mode-toggle.text-toggle {
-  .mode-toggle.text-toggle {
   text-align: center;
   background: transparent;
   padding: 16px 0;
@@ -20,9 +19,6 @@ header {
   position: relative;
   z-index: 2;
 }
-
-}
-
 
 .site {
   display: none;
@@ -45,7 +41,7 @@ header {
   font-weight: 600;
 }
 .navbar .nav-link:hover {
- 
+  text-decoration: underline;
 }
 
 .page {
@@ -78,61 +74,6 @@ button {
   from { opacity: 0; }
   to { opacity: 1; }
 }
-.toggle-centered {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 16px;
-  padding: 12px;
-  background: #1f1f1f;
-  color: white;
-  font-size: 1rem;
-}
-
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
-}
-.switch input {
-  opacity: 0; width: 0; height: 0;
-}
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0; left: 0;
-  right: 0; bottom: 0;
-  background-color: #ccc;
-  transition: .4s;
-  border-radius: 34px;
-}
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 26px; width: 26px;
-  left: 4px; bottom: 4px;
-  background-color: white;
-  transition: .4s;
-  border-radius: 50%;
-}
-input:checked + .slider {
-  background-color: #0055a5;
-}
-input:checked + .slider:before {
-  transform: translateX(26px);
-}
-body {
-  background: #fefefe;
-  color: #000;
-}
-
-.mode-toggle.text-toggle {
-  text-align: center;
-  background: transparent;
-  padding: 16px 0;
-  font-size: 1.2rem;
-}
 
 .mode-option {
   cursor: pointer;
@@ -155,29 +96,13 @@ body {
   margin: 0 8px;
 }
 
-
-  
-#site-build::before {
-  content: "";
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background-image: url('siteimage.png'); /* make sure this filename matches your image */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  filter: blur(.3px);
-  opacity: 0.5;
-  z-index: -1;
-}
-
- #build-home {
+#build-home {
   position: relative;
   height: 100vh;
   overflow: hidden;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .hero-bg {
@@ -185,7 +110,7 @@ body {
   top: 0; left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('build-bg.jpg'); /* Replace with your actual image */
+  background-image: url('siteimage.png');
   background-size: cover;
   background-position: center;
   z-index: -1;
@@ -193,7 +118,7 @@ body {
   transition: transform 0.2s ease-out;
 }
 
-.hero-content {
+.hero-content.left-aligned {
   z-index: 2;
   color: black;
   text-align: left;
@@ -225,6 +150,7 @@ body {
 .hero-heading .gray {
   color: #888;
 }
+
 
 
 
