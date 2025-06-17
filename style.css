@@ -171,6 +171,24 @@ button {
 .hero-heading .gray {
   color: #cccccc;
 }
+.contact-icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-left: 20px;
+}
+
+.contact-icons .icon {
+  width: 24px;
+  height: 24px;
+  filter: brightness(0) invert(1); /* makes icons white */
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.contact-icons .icon: hover {
+  transform: scale(1.1);
+}
 
 
 
