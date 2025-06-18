@@ -24,6 +24,7 @@ header {
   left: 20px;
   height: 150px;
   width: auto;
+  margin-left: 50px;
 }
 
 .mode-toggle.text-toggle {
@@ -62,7 +63,7 @@ header {
   display: flex;
   gap: 24px;
   align-items: center;
-  margin-left: 60px;
+  margin-left: -50px;
 }
 
 .navbar .nav-link {
@@ -79,6 +80,7 @@ header {
   display: flex;
   align-items: center;
   gap: 15px;
+    margin-left: -50px;
 }
 
 .contact-icons .icon {
