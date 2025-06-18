@@ -64,7 +64,7 @@ header {
   gap: 24px;
   align-items: center;
   position: relative;
-  left: 40px;
+  left: -40px;
 }
 
 .navbar .nav-link {
@@ -82,7 +82,7 @@ header {
   align-items: center;
   gap: 15px;
   position: relative;
-  left: -20px;
+  left: -50px;
 }
 
 .contact-icons .icon {
