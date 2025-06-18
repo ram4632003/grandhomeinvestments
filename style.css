@@ -63,7 +63,8 @@ header {
   display: flex;
   gap: 24px;
   align-items: center;
-  margin-left: -50px;
+  position: relative;
+  left: 40px;
 }
 
 .navbar .nav-link {
@@ -80,7 +81,8 @@ header {
   display: flex;
   align-items: center;
   gap: 15px;
-    margin-left: -50px;
+  position: relative;
+  left: -20px;
 }
 
 .contact-icons .icon {
@@ -101,6 +103,7 @@ header {
   color: white;
 }
 
+/* PAGE */
 .page {
   display: none;
   padding: 40px;
