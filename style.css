@@ -72,7 +72,6 @@ header {
   text-decoration: none;
   font-weight: 600;
 }
-
 .navbar .nav-link:hover {
   text-decoration: underline;
 }
@@ -92,7 +91,6 @@ header {
   transition: transform 0.2s ease;
   cursor: pointer;
 }
-
 .contact-icons .icon:hover {
   transform: scale(1.1);
 }
@@ -103,12 +101,18 @@ header {
   color: white;
 }
 
+/* For white 📞 emoji */
+.phone-emoji {
+  color: white;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
 /* PAGE */
 .page {
   display: none;
   padding: 40px;
 }
-
 .page.active {
   display: block;
 }
@@ -119,13 +123,11 @@ form {
   align-items: center;
   gap: 10px;
 }
-
 input,
 button {
   padding: 10px;
   width: 200px;
 }
-
 button {
   background: #0055a5;
   color: white;
@@ -148,16 +150,13 @@ button {
   font-weight: normal;
   transition: all 0.3s ease;
 }
-
 .mode-option:hover {
   text-decoration: underline;
 }
-
 .mode-option.active {
   font-weight: bold;
   font-size: 1.4rem;
 }
-
 .divider {
   color: #666;
   margin: 0 8px;
@@ -169,7 +168,7 @@ button {
   height: 100vh;
   overflow: hidden;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: flex-start;
 }
 
@@ -214,26 +213,18 @@ button {
   line-height: 1.1;
   color: white;
 }
-
 .hero-heading .line {
   display: block;
 }
-
 .hero-heading .indent {
   padding-left: 2rem;
 }
-
 .hero-heading .black {
   color: white;
 }
-
 .hero-heading .gray {
   color: #cccccc;
 }
-
-
-
-
 
 
 
